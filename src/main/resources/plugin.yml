@@ -1,4 +1,4 @@
-name: ProjectName
+name: MessengerPigeons
 version: ${project.version}
-main: org.lushplugins.projectname.ProjectName
+main: org.lushplugins.messengerpigeons.MessengerPigeons
 api-version: '1.17'
