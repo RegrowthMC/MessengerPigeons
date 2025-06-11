@@ -13,15 +13,18 @@ repositories {
     mavenCentral()
     maven("https://oss.sonatype.org/content/groups/public/")
     maven("https://repo.papermc.io/repository/maven-public/") // Paper
+    maven("https://repo.lushplugins.org/snapshots/") // LushMail
+    maven("https://maven.evokegames.gg/snapshots") // EntityLib (for LushMail)
 }
 
 dependencies {
     // Dependencies
     compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
-
-    // Soft Dependencies
+    compileOnly("org.lushplugins:LushMail:0.2.7")
+    compileOnly("org.lushplugins:Followers:2.1.0-beta9")
 
     // Libraries
+    implementation("org.lushplugins:LushLib:0.10.75")
 }
 
 java {
@@ -53,6 +56,17 @@ tasks {
         inputs.property("version", rootProject.version)
         filesMatching("plugin.yml") {
             expand("version" to rootProject.version)
+        }
+    }
+
+    runServer {
+        minecraftVersion("1.21.1")
+
+        downloadPlugins {
+            modrinth("packetevents", "2.7.0")
+            modrinth("viaversion", "5.2.2-SNAPSHOT+662")
+            modrinth("viabackwards", "5.2.2-SNAPSHOT+380")
+            hangar("PlaceholderAPI", "2.11.6")
         }
     }
 }

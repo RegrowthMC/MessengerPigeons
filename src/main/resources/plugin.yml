@@ -2,3 +2,7 @@ name: MessengerPigeons
 version: ${project.version}
 main: org.lushplugins.messengerpigeons.MessengerPigeons
 api-version: '1.17'
+depend:
+  - LushMail
+  - Followers
+  - packetevents
