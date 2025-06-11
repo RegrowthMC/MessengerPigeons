@@ -1,9 +1,9 @@
-package org.lushplugins.projectname;
+package org.lushplugins.messengerpigeons;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class ProjectName extends JavaPlugin {
-    private static ProjectName plugin;
+public final class MessengerPigeons extends JavaPlugin {
+    private static MessengerPigeons plugin;
 
     @Override
     public void onLoad() {
@@ -20,7 +20,7 @@ public final class ProjectName extends JavaPlugin {
         // Disable implementation
     }
 
-    public static ProjectName getInstance() {
+    public static MessengerPigeons getInstance() {
         return plugin;
     }
 }
