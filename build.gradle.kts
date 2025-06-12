@@ -20,7 +20,7 @@ repositories {
 dependencies {
     // Dependencies
     compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
-    compileOnly("org.lushplugins:LushMail:0.2.7")
+    compileOnly("org.lushplugins:LushMail:0.2.8")
     compileOnly("org.lushplugins:Followers:2.1.0-beta9")
 
     // Libraries
