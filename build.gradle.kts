@@ -24,7 +24,7 @@ dependencies {
     compileOnly("org.lushplugins:Followers:2.1.0-beta9")
 
     // Libraries
-    implementation("org.lushplugins:LushLib:0.10.75")
+    implementation("org.lushplugins:LushLib:0.10.77")
 }
 
 java {
