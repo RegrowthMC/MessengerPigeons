@@ -14,7 +14,7 @@ repositories {
     maven("https://oss.sonatype.org/content/groups/public/")
     maven("https://repo.papermc.io/repository/maven-public/") // Paper
     maven("https://repo.lushplugins.org/snapshots/") // LushMail
-    maven(""https://maven.pvphub.me/tofaa"") // EntityLib (for LushMail)
+    maven("https://maven.pvphub.me/tofaa") // EntityLib (for LushMail)
 }
 
 dependencies {
