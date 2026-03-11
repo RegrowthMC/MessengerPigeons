@@ -1,8 +1,8 @@
 plugins {
     `java-library`
     `maven-publish`
-    id("com.gradleup.shadow") version("8.3.0")
-    id("xyz.jpenilla.run-paper") version("2.2.4")
+    id("com.gradleup.shadow") version("9.3.1")
+    id("xyz.jpenilla.run-paper") version("3.0.2")
 }
 
 group = "org.lushplugins"
@@ -14,7 +14,7 @@ repositories {
     maven("https://oss.sonatype.org/content/groups/public/")
     maven("https://repo.papermc.io/repository/maven-public/") // Paper
     maven("https://repo.lushplugins.org/snapshots/") // LushMail
-    maven("https://maven.evokegames.gg/snapshots") // EntityLib (for LushMail)
+    maven("https://maven.pvphub.me/tofaa") // EntityLib (for LushMail)
 }
 
 dependencies {
