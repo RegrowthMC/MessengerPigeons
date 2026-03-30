@@ -11,7 +11,7 @@ import org.lushplugins.followers.api.events.FollowerTickEvent;
 import org.lushplugins.followers.entity.tasks.TaskId;
 import org.lushplugins.followers.libraries.entitylib.meta.display.TextDisplayMeta;
 import org.lushplugins.followers.libraries.entitylib.wrapper.WrapperEntity;
-import org.lushplugins.lushlib.plugin.SpigotPlugin;
+import org.lushplugins.lushlib.utils.plugin.SpigotPlugin;
 import org.lushplugins.lushmail.mail.Mail;
 import org.lushplugins.messengerpigeons.listener.PacketListener;
 import org.lushplugins.messengerpigeons.listener.PigeonListener;
